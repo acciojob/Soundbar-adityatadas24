@@ -2,7 +2,7 @@
 
 function applause1 () {
 	const audio = document.createElement("audio");
-	audio.src = "./sound/applause1.mp3"
+	audio.src = "./sounds/applause1.mp3"
 	audio.play();
 }
 function boo () {
@@ -31,8 +31,9 @@ function wrong () {
 	audio.play();
 }
 function stopSound () {
-	const stoped = document.getElementById("btn");
+	const stoped1 = document.getElementQuerySelector("div>buttons");
 
-	stoped.pause();
-	stoped.currentTime = 0;
+	stoped1.pause();
+	stoped1.currentTime = 0;
+	
 }
