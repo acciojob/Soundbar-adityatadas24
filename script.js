@@ -2,7 +2,7 @@
 
 function applause1 () {
 	const audio = document.createElement("audio");
-	audio.src = "http://commondatastorage.googleapis.com/codeskulptor-assets/Collision8-Bit.ogg"
+	audio.src = "./sound/applause1.mp3"
 	audio.play();
 }
 function boo () {
@@ -31,7 +31,8 @@ function wrong () {
 	audio.play();
 }
 function stopSound () {
-	const stoped = document.getElementByClassName("btn");
+	const stoped = document.getElementById("btn");
 
-	stoped.stop();
+	stoped.pause();
+	stoped.currentTime = 0;
 }
